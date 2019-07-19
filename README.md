@@ -27,7 +27,9 @@ Many people have trouble keeping plants because of the pain of remembering to wa
 * Power Relay
 
 ## Code
+The webhooks folder contains the node.js project to pull data from adafurit.io and server it to Google Assistant and Amazon Alexa
 
+The final_code.ino contains the code for the esp32. You will need to install its includeed librarys as well as your mqtt server details
 
 ## Checkpoints
 - [x] Get the soil moisture sensors working and communicating with ESP 32
