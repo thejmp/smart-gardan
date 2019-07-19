@@ -16,8 +16,8 @@
 
 const char* mqttServer = "io.adafruit.com";
 const int mqttPort = 1883;
-const char* mqttUser = "jpattull";
-const char* mqttPassword = "82bab7e36add49f6acf49a288ddbe524";
+const char* mqttUser = "";
+const char* mqttPassword = "";
 
 float val[5] = {0};
 short soilPower = 23;
@@ -26,7 +26,7 @@ short led = 4;
 bool waterLevel = 0;
 short relayPower[6] = {22,21,19,18,5,17};
 short soilPin[5] = {34, 35, 32, 33, 25};
-String mqttMessSoil = "jpattull/f/soilPlant";
+String mqttMessSoil = "";
 String mqttMess = "";
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -95,7 +95,7 @@ void loop() {
     digitalWrite(led, HIGH);
   else
     digitalWrite(led, LOW);
-  client.publish("jpattull/f/waterLevel", String(waterLevel).c_str());
+  client.publish("", String(waterLevel).c_str());
   client.disconnect ();
   delay(1000);
 }
@@ -118,7 +118,7 @@ int readSoil(int plant)
 void water(short plant) {
   bool watered = 0;
   if (digitalRead(floatSensor)) {
-    client.publish("jpattull/f/wateredPlant", String(plant).c_str());
+    client.publish("", String(plant).c_str());
     for (int i = 0; i < 1; i++) {
      digitalWrite(relayPower[plant], LOW);
      digitalWrite(relayPower[5], LOW);
