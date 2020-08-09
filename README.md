@@ -1,4 +1,6 @@
 # Smart Gardan
+[![version](https://img.shields.io/badge/version-0.1-red.svg)](https://semver.org)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 This is the Smart Garden Project for Embedded Systems class
 
