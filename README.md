@@ -1,7 +1,7 @@
 # Smart Gardan
 [![version](https://img.shields.io/badge/version-0.1-yellow.svg)](https://semver.org)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
-
+## This project as been moved for continued development [Version 0.2](https://github.com/promise333-smart-garden) 
 
 This is the Smart Garden Project for Embedded Systems class
 
